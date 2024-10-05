@@ -43,7 +43,7 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 | Model Type         | Metric         | Score |
 |--------------------|----------------|-------|
 | Voting Ensemble    |    Accuracy Score    | 0.93750  |
-| Voting Ensemble    | Weighted Precision Score   | 0.98249    |
+| Voting Ensemble    | Weighted Precision Score   | 0.93768    |
 | Voting Ensemble    |    Weighted Recall Score        | 0.93750    |
 | Voting Ensemble    |    Weighted F1 Score        | 0.93741    |
 
