@@ -24,7 +24,7 @@ Enable Early Termination: True
 
 The pipeline generates two outputs: the best model and the testing dataset. The best model is selected and evaluated on the test data, with performance measured using the weighted F1 score to assess classification accuracy.
 
-<img src="(https://github.com/user-attachments/assets/c8c528fe-98e5-4afb-867a-480719c7f355)" width="200" />
+![image1](https://github.com/user-attachments/assets/47c5d8bb-d57e-43d8-8d22-d5d666413dfa)
 
 
 ![image](https://github.com/user-attachments/assets/d208d152-c918-40da-906b-1f172ae2e0c8)
