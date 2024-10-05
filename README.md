@@ -26,7 +26,7 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 
 ## Auto ML Pipeline
 
-<img src="hhttps://github.com/user-attachments/assets/bd85257f-16d1-408e-95e8-8b024308d8c5" width="450" />
+<img src="https://github.com/user-attachments/assets/bd85257f-16d1-408e-95e8-8b024308d8c5" width="450" />
 
 
 
