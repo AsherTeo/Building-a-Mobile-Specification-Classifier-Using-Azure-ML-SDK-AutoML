@@ -32,12 +32,17 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 ![image](https://github.com/user-attachments/assets/6e8f78ed-a45b-4bd6-8360-70f8946ca278)
 
 
-## Best Model 
-
-Voting models with the following
+## Best Model: Voting Ensemble
 
 <img src="https://github.com/user-attachments/assets/e1962351-c77b-491f-9a36-c0e8a5f7f47d" width="200" />
 
+## Results
+
+| Metric        | Score |
+|---------------|-------|
+| F1 Score      | 90    |
+| Accuracy Score| 90    |
+| AUC           | 93    |
 
 # Manually Optimized Azure ML Pipeline
 
