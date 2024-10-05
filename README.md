@@ -39,10 +39,6 @@ Voting models with the following
 <img src="https://github.com/user-attachments/assets/e1962351-c77b-491f-9a36-c0e8a5f7f47d" width="200" />
 
 
-
-
-![image](https://github.com/user-attachments/assets/d208d152-c918-40da-906b-1f172ae2e0c8)
-
 # Manually Optimized Azure ML Pipeline
 
 ## Data Preprocessing
