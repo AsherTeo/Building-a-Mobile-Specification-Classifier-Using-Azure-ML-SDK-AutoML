@@ -14,12 +14,12 @@ The dataset is divided into training (80%) and testing sets (20%). The training 
 
 AutoML is trained on the training data with 5-fold cross-validation, evaluating multiple models. The parameters for AutoML include:
 
-Featurization: TabularFeaturizationSettings(mode="Auto") \
-Timeout: 15 minutes \
-Trial Timeout: 2 minutes \
-Max Trials: 40 \
-Enable Early Termination: True 
-
+- **Featurization**: TabularFeaturizationSettings(mode="Auto")
+- **Timeout**: 15 minutes
+- **Trial Timeout**: 2 minutes
+- **Max Trials**: 40
+- **Enable Early Termination**: True
+  
 ## Step 3: Model Evaluation
 
 The pipeline generates two outputs: the best model and the testing dataset. The best model is selected and evaluated on the test data, with performance measured using the weighted F1 score to assess classification accuracy.
