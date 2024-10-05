@@ -28,6 +28,7 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 
 <img src="https://github.com/user-attachments/assets/b8b9b6f9-05f7-4566-8df8-a8999f4e2eda" width="450" />
 
+<img src="https://github.com/user-attachments/assets/e1962351-c77b-491f-9a36-c0e8a5f7f47d" width="450" />
 
 
 
