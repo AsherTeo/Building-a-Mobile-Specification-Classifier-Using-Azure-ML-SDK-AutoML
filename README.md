@@ -36,14 +36,25 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 
 <img src="https://github.com/user-attachments/assets/e1962351-c77b-491f-9a36-c0e8a5f7f47d" width="200" />
 
-## Results
+## Results 
+
+### Validation 
 
 | Model Type         | Metric         | Score |
 |--------------------|----------------|-------|
-| Voting Ensemble    |    Accuracy Score    | 90    |
-| Voting Ensemble    | Weighted Precision Score   | 90    |
-| Voting Ensemble    |    Weighted Recall Score        | 93    |
-| Voting Ensemble    |    Weighted F1 Score        | 93    |
+| Voting Ensemble    |    Accuracy Score    | 0.93750  |
+| Voting Ensemble    | Weighted Precision Score   | 0.98249    |
+| Voting Ensemble    |    Weighted Recall Score        | 0.93750    |
+| Voting Ensemble    |    Weighted F1 Score        | 0.93741    |
+
+### Testing 
+
+| Model Type         | Metric         | Score |
+|--------------------|----------------|-------|
+| Voting Ensemble    |    Accuracy Score    | 0.93757   |
+| Voting Ensemble    | Weighted Precision Score   | 0.9375    |
+| Voting Ensemble    |    Weighted Recall Score        | 0.9375    |
+| Voting Ensemble    |    Weighted F1 Score        | 0.937491   |
 
 # Manually Optimized Azure ML Pipeline
 
