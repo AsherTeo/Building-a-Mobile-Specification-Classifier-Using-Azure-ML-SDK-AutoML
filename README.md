@@ -38,11 +38,12 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 
 ## Results
 
-| Metric        | Score |
-|---------------|-------|
-| F1 Score      | 90    |
-| Accuracy Score| 90    |
-| AUC           | 93    |
+| Model Type         | Metric         | Score |
+|--------------------|----------------|-------|
+| Voting Ensemble    |    Accuracy Score    | 90    |
+| Voting Ensemble    | Weighted Precision Score   | 90    |
+| Voting Ensemble    |    Weighted Recall Score        | 93    |
+| Voting Ensemble    |    Weighted F1 Score        | 93    |
 
 # Manually Optimized Azure ML Pipeline
 
