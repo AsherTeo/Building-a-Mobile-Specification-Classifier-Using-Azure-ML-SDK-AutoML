@@ -4,6 +4,17 @@ In this project, I developed a mobile specification classification model using t
 
 I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared its performance against an AutoML approach. The AutoML method achieved an weighted F1 score of 90%, while the manually optimized pipeline reached an impressive weighted F1 score of 97%. This comparison underscores the effectiveness of manual feature selection and model tuning in enhancing classification accuracy, demonstrating the advantages of tailored machine learning solutions over automated ones.
 
+# Manually Optimized Azure ML Pipeline
+
+## Data Preprocessing
+
+## Feature Engineering
+
+## Model Selection
+
+## Model FineTuning 
+
+## Evaluation 
 # Azure AutoML Implementation
 
 ## Step 1: Split Data
@@ -56,14 +67,4 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 | Voting Ensemble    |    Weighted Recall Score        | 0.9375    |
 | Voting Ensemble    |    Weighted F1 Score        | 0.937491   |
 
-# Manually Optimized Azure ML Pipeline
 
-## Data Preprocessing
-
-## Feature Engineering
-
-## Model Selection
-
-## Model FineTuning 
-
-## Evaluation 
