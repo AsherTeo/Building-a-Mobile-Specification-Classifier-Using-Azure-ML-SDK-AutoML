@@ -1,0 +1,36 @@
+artifact_path: outputs/mlflow-model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: pickle
+    sklearn_version: 1.5.1
+metadata:
+  azureml.base_image: mcr.microsoft.com/azureml/curated/ai-ml-automl:5
+  azureml.engine: automl
+mlflow_version: 2.9.2
+model_size_bytes: 6362774
+model_uuid: 715d889ff7c140d897a8a77dc6b5b6a2
+run_id: 4c6c2b16-2f0d-45be-a075-9fe8558dd715_22
+signature:
+  inputs: '[{"type": "long", "name": "battery_power"}, {"type": "boolean", "name":
+    "blue"}, {"type": "double", "name": "clock_speed"}, {"type": "boolean", "name":
+    "dual_sim"}, {"type": "long", "name": "fc"}, {"type": "boolean", "name": "four_g"},
+    {"type": "long", "name": "int_memory"}, {"type": "double", "name": "m_dep"}, {"type":
+    "long", "name": "mobile_wt"}, {"type": "long", "name": "n_cores"}, {"type": "long",
+    "name": "pc"}, {"type": "long", "name": "px_height"}, {"type": "long", "name":
+    "px_width"}, {"type": "long", "name": "ram"}, {"type": "long", "name": "sc_h"},
+    {"type": "long", "name": "sc_w"}, {"type": "long", "name": "talk_time"}, {"type":
+    "boolean", "name": "three_g"}, {"type": "boolean", "name": "touch_screen"}, {"type":
+    "boolean", "name": "wifi"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-10-05 17:58:56.351324'
