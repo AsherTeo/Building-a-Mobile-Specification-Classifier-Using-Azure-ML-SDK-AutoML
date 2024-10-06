@@ -6,7 +6,7 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 # Manually Optimized Azure ML Pipeline
 
-## Data Preprocessing
+## 1. Data Preprocessing
 - **Handled missing values:**
 - **Remove duplicate values:**
   
@@ -17,7 +17,10 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 - **Select features with p-values lower than 0.05.**
   
 ## 3. Model Selection
+- **Split the data into training and testing sets** and use 5-fold cross-validation on the training data.
+- **Create a pipeline** that tests different scalers (e.g., MinMaxScaler, StandardScaler) and machine learning algorithms for comparison.
 
+  
 ## 4. Model FineTuning 
 
 ## 5. Evaluation 
