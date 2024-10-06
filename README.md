@@ -31,7 +31,8 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 ## 4. Model FineTuning 
 - **Tuning method: Optuna was used to fine-tune hyperparameters for each model.**
-
+- **Best models: The table below shows the performance of top models after fine-tuning.**
+  
   | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
 |--------------------|-------|-----------|----------|----------|-----------|
 | StandardScaler()    | SVM    | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
