@@ -35,9 +35,10 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
   
   | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
 |--------------------|-------|-----------|----------|----------|-----------|
-| StandardScaler()    | SVM    | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
-| SRobustScaler()    | CAT   | 0.922122  | 0.921250 | 0.921353 | 0.921250  |
-| StandardScaler()   | LGB   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
+| RobustScaler()     | CatBoost   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
+| StandardScaler()   | SVM   | 0.922122  | 0.921250 | 0.921353 | 0.921250  |
+| StandardScaler()   | LightGBM   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
+
 
 ## 5. Evaluation 
 
