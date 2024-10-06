@@ -8,9 +8,14 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 ## Data Preprocessing
 - **Handled missing values:**
-
+- **Remove duplicate values:**
+  
 ## 2. Feature Engineering
-
+- **Check for skewness and use Box-Cox if skew value is large.**
+- **Apply Chi-Square test for categorical features.**
+- **Apply ANOVA for numerical features.**
+- **Select features with p-values lower than 0.05.**
+  
 ## 3. Model Selection
 
 ## 4. Model FineTuning 
