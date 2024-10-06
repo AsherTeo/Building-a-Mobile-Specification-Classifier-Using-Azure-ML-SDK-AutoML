@@ -7,14 +7,15 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 # Manually Optimized Azure ML Pipeline
 
 ## 1. Data Preprocessing
+- **Handled missing values
+- 
+## 2. Feature Engineering
 
-## Feature Engineering
+## 3. Model Selection
 
-## Model Selection
+## 4. Model FineTuning 
 
-## Model FineTuning 
-
-## Evaluation 
+## 5. Evaluation 
 
 ## Pipeline
 <img src="https://github.com/user-attachments/assets/139ed9c1-82e1-41e6-be27-e79131fbc595" width="550" />
