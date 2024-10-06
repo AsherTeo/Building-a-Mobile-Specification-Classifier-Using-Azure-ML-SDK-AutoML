@@ -17,10 +17,26 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 - **Select features with p-values lower than 0.05.**
   
 ## 3. Model Selection
-- **Split the data into training and testing sets** and use 5-fold cross-validation on the training data.
-- **Create a pipeline** that tests different scalers (e.g., MinMaxScaler, StandardScaler) and machine learning algorithms for comparison.
+- **Split the data** into training and testing sets and apply 5-fold cross-validation on the training data.
+- **Create a pipeline** that tests different scalers (MinMaxScaler, StandardScaler, RobustScaler) and various machine learning algorithms (SVM, Gradient Boosting, Random Forest, XGBoost, LightGBM, CatBoost).
+- **Compare and select the top 3 models** based on the weighted F1 score.
+- 
+### Validation Results
 
-  
+  | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
+|--------------------|-------|-----------|----------|----------|-----------|
+| RobustScaler()     | CAT   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
+| MinMaxScaler()     | CAT   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
+| StandardScaler()   | CAT   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
+| StandardScaler()   | SVM   | 0.922122  | 0.921250 | 0.921353 | 0.921250  |
+| StandardScaler()   | LGB   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
+| MinMaxScaler()     | LGB   | 0.915364  | 0.914375 | 0.914326 | 0.914375  |
+| MinMaxScaler()     | XGB   | 0.912900  | 0.912500 | 0.912412 | 0.912500  |
+| RobustScaler()     | XGB   | 0.912808  | 0.912500 | 0.912400 | 0.912500  |
+| StandardScaler()   | XGB   | 0.912808  | 0.912500 | 0.912400 | 0.912500  |
+| RobustScaler()     | LGB   | 0.912180  | 0.911250 | 0.911249 | 0.911250  |
+| RobustScaler()     | SVM   | 0.908121  | 0.906875 | 0.906993 | 0.906875  |
+
 ## 4. Model FineTuning 
 
 ## 5. Evaluation 
