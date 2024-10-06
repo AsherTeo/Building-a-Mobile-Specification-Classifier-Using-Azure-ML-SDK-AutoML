@@ -23,7 +23,7 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
   
 ### Top 3 Validation Results
 
-  | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
+  | Scaler             | Baseline Model | Precision | Recall   | F1 Score | Accuracy  |
 |--------------------|-------|-----------|----------|----------|-----------|
 | RobustScaler()     | CatBoost   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
 | StandardScaler()   | SVM   | 0.922122  | 0.921250 | 0.921353 | 0.921250  |
