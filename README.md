@@ -20,7 +20,7 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 - **Split the data** into training and testing sets and apply 5-fold cross-validation on the training data.
 - **Create a pipeline** that tests different scalers (MinMaxScaler, StandardScaler, RobustScaler) and various machine learning algorithms (SVM, Gradient Boosting, Random Forest, XGBoost, LightGBM, CatBoost).
 - **Compare and select the top 3 models** based on the weighted F1 score.
-- 
+  
 ### Top 7 Validation Results
 
   | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
