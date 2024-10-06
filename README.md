@@ -21,7 +21,7 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 - **Create a pipeline** that tests different scalers (MinMaxScaler, StandardScaler, RobustScaler) and various machine learning algorithms (SVM, Gradient Boosting, Random Forest, XGBoost, LightGBM, CatBoost).
 - **Compare and select the top 3 models** based on the weighted F1 score.
 - 
-### Validation Results
+### Top 7 Validation Results
 
   | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
 |--------------------|-------|-----------|----------|----------|-----------|
@@ -32,10 +32,7 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 | StandardScaler()   | LGB   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
 | MinMaxScaler()     | LGB   | 0.915364  | 0.914375 | 0.914326 | 0.914375  |
 | MinMaxScaler()     | XGB   | 0.912900  | 0.912500 | 0.912412 | 0.912500  |
-| RobustScaler()     | XGB   | 0.912808  | 0.912500 | 0.912400 | 0.912500  |
-| StandardScaler()   | XGB   | 0.912808  | 0.912500 | 0.912400 | 0.912500  |
-| RobustScaler()     | LGB   | 0.912180  | 0.911250 | 0.911249 | 0.911250  |
-| RobustScaler()     | SVM   | 0.908121  | 0.906875 | 0.906993 | 0.906875  |
+
 
 ## 4. Model FineTuning 
 
