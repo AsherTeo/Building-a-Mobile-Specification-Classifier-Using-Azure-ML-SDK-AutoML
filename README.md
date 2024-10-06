@@ -19,22 +19,24 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 ## 3. Model Selection
 - **Split the data** into training and testing sets and apply 5-fold cross-validation on the training data.
 - **Create a pipeline** that tests different scalers (MinMaxScaler, StandardScaler, RobustScaler) and various machine learning algorithms (SVM, Gradient Boosting, Random Forest, XGBoost, LightGBM, CatBoost).
-- **Compare and select the top 3 models** based on the weighted F1 score.
+- **Compare and select the top 3 models** based on the weighted F1 score for further fine-tuning.
   
-### Top 7 Validation Results
+### Top 3 Validation Results
 
   | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
 |--------------------|-------|-----------|----------|----------|-----------|
-| RobustScaler()     | CAT   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
-| MinMaxScaler()     | CAT   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
-| StandardScaler()   | CAT   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
+| RobustScaler()     | CatBoost   | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
 | StandardScaler()   | SVM   | 0.922122  | 0.921250 | 0.921353 | 0.921250  |
-| StandardScaler()   | LGB   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
-| MinMaxScaler()     | LGB   | 0.915364  | 0.914375 | 0.914326 | 0.914375  |
-| MinMaxScaler()     | XGB   | 0.912900  | 0.912500 | 0.912412 | 0.912500  |
-
+| StandardScaler()   | LightGBM   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
 
 ## 4. Model FineTuning 
+- **Tuning method: Optuna was used to fine-tune hyperparameters for each model.**
+
+  | Scaler             | Model | Precision | Recall   | F1 Score | Accuracy  |
+|--------------------|-------|-----------|----------|----------|-----------|
+| StandardScaler()    | SVM    | 0.937639  | 0.936875 | 0.936813 | 0.936875  |
+| SRobustScaler()    | CAT   | 0.922122  | 0.921250 | 0.921353 | 0.921250  |
+| StandardScaler()   | LGB   | 0.915184  | 0.914375 | 0.914389 | 0.914375  |
 
 ## 5. Evaluation 
 
