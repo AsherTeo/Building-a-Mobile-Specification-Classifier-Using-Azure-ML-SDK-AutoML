@@ -1,0 +1,14 @@
+channels:
+- conda-forge
+dependencies:
+- python=3.10.15
+- pip<=21.3.1
+- pip:
+  - mlflow==2.16.2
+  - backports-tempfile==1.0
+  - cloudpickle==2.2.1
+  - jaraco-collections==5.1.0
+  - pandas==1.5.3
+  - psutil==5.8.0
+  - scikit-learn==1.5.2
+name: mlflow-env
