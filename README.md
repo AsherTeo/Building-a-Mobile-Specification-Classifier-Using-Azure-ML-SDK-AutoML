@@ -1,20 +1,18 @@
 # Overview
 
-In this project, I developed a mobile specification classification model using the Azure Machine Learning Python SDK v2, complemented by Azure AutoML for comparative analysis. The project involved creating an end-to-end machine learning pipeline that included data preprocessing, feature engineering, model training, performance fine-tuning, and deployment—all within Azure’s scalable cloud environment.
+In this project, I developed a mobile specification classification model using the Azure Machine Learning Python SDK v2, alongside Azure AutoML for comparison. The project involves building an end-to-end machine learning pipeline that includes data preprocessing, feature engineering, model training, fine-tuning, and deployment within Azure's scalable cloud environment.
 
-I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared its performance against an AutoML approach. The AutoML method achieved an weighted F1 score of 90%, while the manually optimized pipeline reached an impressive weighted F1 score of 97%. This comparison underscores the effectiveness of manual feature selection and model tuning in enhancing classification accuracy, demonstrating the advantages of tailored machine learning solutions over automated ones.
-
+I created a manually optimized pipeline using the Azure ML SDK v2 and compared its performance to an Azure AutoML approach. The AutoML model achieved a weighted F1 score of 93%, while the manually optimized pipeline reached an impressive 97%. This highlights the advantage of manual feature selection and tuning in boosting classification accuracy, demonstrating the benefits of custom machine learning solutions over automated ones.
 # Manually Optimized Azure ML Pipeline
 
 ## 1. Data Preprocessing
-- **Handled missing values:**
-- **Remove duplicate values:**
+- **Handle missing values to ensure data integrity.**
+- **Remove duplicate values to avoid redundant information.**
   
 ## 2. Feature Engineering
-- **Check for skewness and use Box-Cox if skew value is large.**
-- **Apply Chi-Square test for categorical features.**
-- **Apply ANOVA for numerical features.**
-- **Select features with p-values lower than 0.05.**
+- **Check for skewness and apply Box-Cox transformation for large skew values.**
+- **Use Chi-Square tests for categorical feature selection and select those with p-values below 0.05.**
+- **Use ANOVA for numerical features and select those with p-values below 0.05.**
   
 ## 3. Model Selection
 - **Split the data** into training and testing sets and apply 5-fold cross-validation on the training data.
@@ -42,17 +40,17 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 ## 5. Evaluation 
 
-- **Evaluate the top three models by testing them on the evaluation dataset and comparing their performance metrics (e.g., accuracy, F1-score, precision, recall).**
-- **Select the best-performing model, in this case, the StandardScaler with SVM, based on the fine-tuned results and overall performance.**
-- **Register the best model in MLFlow for tracking and future deployment.**
+- **Evaluate top models on the test dataset using metrics such as accuracy, F1-score, precision, and recall.**
+- **Select the best model, StandardScaler with SVM, based on fine-tuning results and overall performance.**
+- **Register the best model in MLFlow for tracking and deployment.**
 
-| Scaler             | Model       | Precision | Recall   | F1 Score | Accuracy  |
-|--------------------|-------------|-----------|----------|----------|-----------|
-| StandardScaler()     | SVM    | 0.960625  | 0.96091 | 0.96062 | 0.96055  |
-| RobustScaler()   | CatBoost         | 0.94500  | 0.945139 | 0.9450 | 0.94493  |
-| StandardScaler()   | LightGBM    | 0.925  | 0.925770 | 0.925 | 0.92519  |
+| Scaler             | Model       | Precision | Recall   | F1 Score | 
+|--------------------|-------------|-----------|----------|----------|
+| StandardScaler()     | SVM    | 0.96812  | 0.9675 | 0.96743 | 
+| RobustScaler()   | CatBoost         | 0.95276  | 0.9525 | 0.95229 | 
+| StandardScaler()   | LightGBM    | 0.9245  | 0.9225 | 0.92274 | 
 
-## Pipeline
+## Azure ML Pipeline
 <img src="https://github.com/user-attachments/assets/139ed9c1-82e1-41e6-be27-e79131fbc595" width="550" />
 
 # Azure AutoML Implementation
@@ -89,23 +87,12 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 
 ## Results 
 
-### Validation 
-
-| Model Type         | Metric         | Score |
-|--------------------|----------------|-------|
-| Voting Ensemble    |    Accuracy Score    | 0.93750  |
-| Voting Ensemble    | Weighted Precision Score   | 0.93768    |
-| Voting Ensemble    |    Weighted Recall Score        | 0.93750    |
-| Voting Ensemble    |    Weighted F1 Score        | 0.93741    |
-
-### Testing 
-
-| Model Type         | Metric         | Score |
-|--------------------|----------------|-------|
-| Voting Ensemble    |    Accuracy Score    | 0.93757   |
-| Voting Ensemble    | Weighted Precision Score   | 0.9375    |
-| Voting Ensemble    |    Weighted Recall Score        | 0.9375    |
-| Voting Ensemble    |    Weighted F1 Score        | 0.937491   |
+| Model Type       | Metric      | Validation Score | Test Score |
+|------------------|-------------|------------------|------------|
+| Voting Ensemble  | Accuracy    | 0.93750          | 0.93757    |
+| Voting Ensemble  | Precision   | 0.93768          | 0.9375     |
+| Voting Ensemble  | Recall      | 0.93750          | 0.9375     |
+| Voting Ensemble  | F1 Score    | 0.93741          | 0.937491   |
 
 
 # Conclusion
