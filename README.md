@@ -97,3 +97,10 @@ The pipeline generates two outputs: the best model and the testing dataset. The 
 
 # Conclusion
 
+This project demonstrated the effectiveness of manually optimizing an Azure ML pipeline compared to AutoML. While AutoML achieved a respectable 93% weighted F1 score, manual optimization outperformed it with 97%, highlighting the value of feature selection and model tuning in improving classification performance. 
+
+However, a potential hybrid approach could be explored: manual feature selection combined with AutoML for model training and hyperparameter tuning. This approach leverages the strengths of both methods—manual feature selection to ensure that only the most relevant features are used, and AutoML's efficiency in evaluating and tuning a wide range of models.
+
+By pre-selecting features, AutoML can focus on optimizing model performance without being burdened by irrelevant or redundant data, which may lead to faster training times and potentially better results.
+
+While this hybrid approach could be ideal in some scenarios, its success depends on factors such as dataset size and complexity. It strikes a balance between automation and manual control, combining the advantages of domain knowledge and computational efficiency.
