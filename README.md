@@ -42,6 +42,16 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 ## 5. Evaluation 
 
+- **Evaluate the top three models by testing them on the evaluation dataset and comparing their performance metrics (e.g., accuracy, F1-score, precision, recall).**
+- **Select the best-performing model, in this case, the StandardScaler with SVM, based on the fine-tuned results and overall performance.**
+- **Register the best model in MLFlow for tracking and future deployment.**
+
+| Scaler             | Model       | Precision | Recall   | F1 Score | Accuracy  |
+|--------------------|-------------|-----------|----------|----------|-----------|
+| StandardScaler()     | SVM    | 0.960625  | 0.96091 | 0.96062 | 0.96055  |
+| RobustScaler()   | CatBoost         | 0.94500  | 0.945139 | 0.9450 | 0.94493  |
+| StandardScaler()   | LightGBM    | 0.925  | 0.925770 | 0.925 | 0.92519  |
+
 ## Pipeline
 <img src="https://github.com/user-attachments/assets/139ed9c1-82e1-41e6-be27-e79131fbc595" width="550" />
 
