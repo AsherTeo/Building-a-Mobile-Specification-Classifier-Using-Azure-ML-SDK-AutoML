@@ -50,8 +50,13 @@ I created a manually optimized pipeline using the Azure ML SDK v2 and compared i
 | RobustScaler()   | CatBoost         | 0.95276  | 0.9525 | 0.95229 | 
 | StandardScaler()   | LightGBM    | 0.9245  | 0.9225 | 0.92274 | 
 
+## Postman Depolyment
+
+<img src="https://github.com/user-attachments/assets/eb8a998e-b804-42f2-829b-eb445f8f4711" width="500" />
 ## Azure ML Pipeline
 <img src="https://github.com/user-attachments/assets/139ed9c1-82e1-41e6-be27-e79131fbc595" width="550" />
+
+
 
 # Azure AutoML Implementation
 
@@ -73,10 +78,6 @@ AutoML is trained on the training data with 5-fold cross-validation, evaluating 
 
 The pipeline generates two outputs: the best model and the testing dataset. The best model is selected and evaluated on the test data, with performance measured using the weighted F1 score to assess classification accuracy.
 
-
-## Postman Depolyment
-
-<img src="https://github.com/user-attachments/assets/eb8a998e-b804-42f2-829b-eb445f8f4711" width="300" />
 
 ## Auto ML Pipeline
 
