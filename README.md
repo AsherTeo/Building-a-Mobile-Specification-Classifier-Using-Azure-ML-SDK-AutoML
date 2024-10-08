@@ -4,6 +4,17 @@ In this project, I developed a mobile specification classification model using t
 
 I created a manually optimized pipeline using the Azure ML SDK v2 and compared its performance to an Azure AutoML approach. The AutoML model achieved a weighted F1 score of 93%, while the manually optimized pipeline reached an impressive 97%. This highlights the advantage of manual feature selection and tuning in boosting classification accuracy, demonstrating the benefits of custom machine learning solutions over automated ones.
 
+# Dataset
+
+The Mobile Price Classification Dataset [here on Kaggle] (https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) which contains mobile phone specifications and their corresponding price ranges. The dataset includes features such as battery power, RAM, internal memory, camera resolutions, screen size, and whether the phone supports 4G or NFC.
+
+The target variable, Price Range, classifies phones into four categories:
+
+0: Low
+1: Medium
+2: High
+3: Very high
+
 # Manually Optimized Azure ML Pipeline
 
 ## 1. Data Preprocessing
