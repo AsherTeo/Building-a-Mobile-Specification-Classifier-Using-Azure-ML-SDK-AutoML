@@ -1,8 +1,9 @@
 # Overview
 
-In this project, I developed a mobile specification classification model using the Azure Machine Learning Python SDK v2, alongside Azure AutoML for comparison. The project involves building an end-to-end machine learning pipeline that includes data preprocessing, feature engineering, model training, fine-tuning, and deployment within Azure's scalable cloud environment.
+In this project, I developed a mobile specification classification model using the Azure Machine Learning Python SDK v2, alongside Azure AutoML for comparison. The project involves building an end-to-end machine learning pipeline that includes data preprocessing, feature engineering, model training, fine-tuning, and deployment within Azure's scalable cloud environment. After deployment, I used Postman to validate the model by sending API requests to the deployed endpoint, ensuring the model provided real-time predictions, making it accessible for integration with external applications via RESTful APIs.
 
 I created a manually optimized pipeline using the Azure ML SDK v2 and compared its performance to an Azure AutoML approach. The AutoML model achieved a weighted F1 score of 93%, while the manually optimized pipeline reached an impressive 97%. This highlights the advantage of manual feature selection and tuning in boosting classification accuracy, demonstrating the benefits of custom machine learning solutions over automated ones.
+
 # Manually Optimized Azure ML Pipeline
 
 ## 1. Data Preprocessing
