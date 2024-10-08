@@ -6,7 +6,7 @@ I created a manually optimized pipeline using the Azure ML SDK v2 and compared i
 
 # Dataset
 
-The Mobile Price Classification Dataset [here on Kaggle] (https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) which contains mobile phone specifications and their corresponding price ranges. The dataset includes features such as battery power, RAM, internal memory, camera resolutions, screen size, and whether the phone supports 4G or NFC.
+The Mobile Price Classification Dataset [here on Kaggle](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification) which contains mobile phone specifications and their corresponding price ranges. The dataset includes features such as battery power, RAM, internal memory, camera resolutions, screen size, and whether the phone supports 4G or NFC.
 
 The target variable, Price Range, classifies phones into four categories:
 
