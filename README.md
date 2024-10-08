@@ -73,6 +73,11 @@ AutoML is trained on the training data with 5-fold cross-validation, evaluating 
 
 The pipeline generates two outputs: the best model and the testing dataset. The best model is selected and evaluated on the test data, with performance measured using the weighted F1 score to assess classification accuracy.
 
+
+## Postman Depolyment
+
+<img src="https://github.com/user-attachments/assets/eb8a998e-b804-42f2-829b-eb445f8f4711" width="300" />
+
 ## Auto ML Pipeline
 
 <img src="https://github.com/user-attachments/assets/bd85257f-16d1-408e-95e8-8b024308d8c5" width="450" />
