@@ -50,7 +50,15 @@ I created a manually optimized pipeline using the Azure ML SDK v2 and compared i
 | RobustScaler()   | CatBoost         | 0.95276  | 0.9525 | 0.95229 | 
 | StandardScaler()   | LightGBM    | 0.9245  | 0.9225 | 0.92274 | 
 
-## Postman Depolyment
+## 6. Model Deployment with Postman
+
+After selecting the best model (SVM with StandardScaler), I deployed it to an Azure Managed Online Endpoint for real-time predictions. Postman was used to test the API by sending POST requests to the endpoint with the input data in JSON format.
+
+Steps:
+**Configure Postman: Set up the endpoint URL, add the Authorization token, and set the content type to application/json.**
+**Input Data: Send the input features as key-value pairs in the JSON body.**
+**Send Request: Postman sends a POST request, and the model responds with predictions.**
+**This process confirmed the successful deployment and real-time inference of the model.**
 
 <img src="https://github.com/user-attachments/assets/6395debb-f4b3-4bd6-a714-c8632182538c" width="500" />
 
