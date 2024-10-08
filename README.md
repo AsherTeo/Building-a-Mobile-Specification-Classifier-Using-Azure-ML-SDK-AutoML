@@ -53,7 +53,9 @@ I created a manually optimized pipeline using the Azure ML SDK v2 and compared i
 ## Postman Depolyment
 
 <img src="https://github.com/user-attachments/assets/eb8a998e-b804-42f2-829b-eb445f8f4711" width="500" />
+
 ## Azure ML Pipeline
+
 <img src="https://github.com/user-attachments/assets/139ed9c1-82e1-41e6-be27-e79131fbc595" width="550" />
 
 
