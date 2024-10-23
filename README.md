@@ -72,7 +72,7 @@ Steps:
 - **Send Request: Postman sends a POST request, and the model responds with predictions.**
 - **This process confirmed the successful deployment and real-time inference of the model.**
 
-<img src="https://github.com/user-attachments/assets/9675650a-0da5-4f8e-b639-311cff1f19cd" width="500" />
+<img src="https://github.com/user-attachments/assets/6395debb-f4b3-4bd6-a714-c8632182538c" width="500" />
 
 ## Azure ML Pipeline
 
